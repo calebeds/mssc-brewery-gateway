@@ -6,9 +6,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
 
-@Profile("google")
-@Configuration
+//@Profile("google")
+//@Configuration
 public class GoogleConfig {
+    /**
+     * This is just an example of routing requests to Google from localhost. For demonstration only
+     * @param builder
+     * @return
+     */
     @Bean
     public RouteLocator googleRouteConfig(RouteLocatorBuilder builder) {
         return builder.routes()
